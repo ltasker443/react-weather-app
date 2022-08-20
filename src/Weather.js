@@ -15,14 +15,22 @@ export default function Weather() {
                     autocomplete="off"
                     placeholder="City"
                     />
-                    <button className="button" type="submit">Search</button>
+                    <button className="btn" type="submit">Search</button>
                 </form>
 
             <h3>Las Vegas </h3>
-            <h5>Clear</h5>
+
             <div className="row">
-                <div className="col-6">
-                    103º
+                <div className="col-6 temperature">
+                    <ul>
+                        <li>
+                            Clear
+                        </li>
+                        <li>
+                            103ºF
+                        </li>
+                        
+                    </ul>
                 </div>
                 <div className="col-6">
                     <ul>
@@ -38,8 +46,8 @@ export default function Weather() {
                     </ul>
                 </div>
             </div>
-            <footer>
-                <a href="https://github.com/ltasker443/react-weather-app" rel="noreferrer" target="_blank"> Open Source by Laura Tasker </a>
+            <footer className="github-link">
+                <a href="https://github.com/ltasker443/react-weather-app" rel="noreferrer" target="_blank"> Open Source </a> by Laura Tasker
             </footer>
             </div>
         </div>
