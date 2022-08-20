@@ -1,7 +1,10 @@
 import React from "react";
+import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
+    const apiKey="294c897fc47f4b73d1c81e6766aacc85";
+    let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=imperial`;  
     return (
     <div className="Weather">
         
