@@ -1,3 +1,24 @@
-h3 {
-    color: red;
+.Weather {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Weather .card{
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin: 5px auto;
+    max-width: 600px;
+    border: 2px solid #ded5c4;
+    border-radius: 10px;
+}
+.Weather h3 {
+    color: #305973;
+    font-weight: 500;
+}
+.Weather .form-control {
+    border: 2px solid #ded5c4;
+    margin-top: 0;
+    padding: 10px;
+}
+.Weather li {
+    list-style: none;
 }

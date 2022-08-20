@@ -4,12 +4,20 @@ import "./Weather.css";
 export default function Weather() {
     return (
     <div className="Weather">
-        <input type="search" placeholder="City" />
-        <button type="submit" value="Search">
-            Search
-        </button>
-        <div class="card">
-            <div class="card-body">
+        
+        <div className="card">
+            <div className="card-body">
+                <form className="d-flex" role="search">
+                    <input
+                    className="form-control"
+                    type="search"
+                    autofocus = "on"
+                    autocomplete="off"
+                    placeholder="City"
+                    />
+                    <button className="button" type="submit">Search</button>
+                </form>
+
             <h3>Las Vegas </h3>
             <h5>Clear</h5>
             <div className="row">
@@ -30,6 +38,9 @@ export default function Weather() {
                     </ul>
                 </div>
             </div>
+            <footer>
+                <a href="https://github.com/ltasker443/react-weather-app" rel="noreferrer" target="_blank"> Open Source by Laura Tasker </a>
+            </footer>
             </div>
         </div>
     </div>
