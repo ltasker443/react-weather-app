@@ -10,21 +10,17 @@
     border: 2px solid #a7bcb9;
     border-radius: 10px;
 }
-.Weather h3 {
-    color: #24527a;
-    font-weight: 500;
-    margin: 10px 0 0 0;
-    
-}
-.Weather .form-control, .btn{
+
+.Weather .form-control, .btn {
     border: 2px solid #a7bcb9;
     margin-top: 0;
     padding: 10px;
+    color: #a7bcb9;
 }
-.Weather li {
-    list-style: none;
-    color:#5dacbd;
+
+.Weather ul {
     margin: 0;
+    padding: 0;
 }
 .Weather .temperature {
     color:#5dacbd;

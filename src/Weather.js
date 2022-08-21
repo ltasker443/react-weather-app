@@ -17,6 +17,7 @@ export default function Weather(props) {
             description: response.data.weather[0].description,
             feel: response.data.main.feels_like,
             date: new Date(response.data.dt * 1000),
+            icon: response.data.weather[0].icon, 
         });
     }
 
@@ -47,8 +48,9 @@ export default function Weather(props) {
                             autoFocus = "on"
                             autoComplete="off"
                             placeholder="City"
+                            onChange={handleChange}
                             />
-                            <button className="btn" type="submit" onChange={handleChange}>Search</button>
+                            <button className="btn" type="submit">Search</button>
                         </form>
                         <WeatherData data={weatherData} />
                     </div>
@@ -57,7 +59,7 @@ export default function Weather(props) {
  );
     } else {
     search();
-    return "Loading";
+    return "Summoning Data";
     }
     }
   

@@ -1,0 +1,10 @@
+.WeatherData h3 {
+    color:#24527a;
+    margin: 15px 0 0 0;
+}
+.WeatherData li {
+    list-style: none;
+    color: #5dacbd;
+    margin: 0;
+    padding: 0;
+}
