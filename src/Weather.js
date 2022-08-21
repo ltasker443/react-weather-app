@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import FormatDate from "./FormatDate.js";
+import WeatherData from "./WeatherData.js";
 import "./Weather.css";
 
 export default function Weather() {
@@ -34,29 +34,13 @@ export default function Weather() {
                             />
                             <button className="btn" type="submit">Search</button>
                         </form>
-                        <h3>{weather.city}</h3>
-                        <div className="row">
-                            <div className="col-6 temperature">
-                                <ul>
-                                    <li><FormatDate date={weather.date} /> </li>
-                                    <li className="text-capitalize">{weather.description}</li>
-                                    <li className="temperature">{Math.round(weather.temperature)}ºF</li>
-                                </ul>
-                            </div>
-                        <div className="col-6">
-                            <ul>
-                                <li className="humidity">Humidity: {weather.humidity}%</li>
-                                <li className="wind">Wind: {Math.round(weather.wind)}mph</li>
-                                <li className="current-feel">Feels Like: {Math.round(weather.feel)}ºF</li>
-                            </ul>
-                        </div>
+                        <WeatherData info={weather}/>
                     </div>
-                    <footer className="github-link">
-                <a href="https://github.com/ltasker443/react-weather-app" rel="noreferrer" target="_blank"> Open Source </a> by Laura Tasker
-            </footer>
-            </div>
+                     <footer className="github-link">
+                        <a href="https://github.com/ltasker443/react-weather-app" rel="noreferrer" target="_blank"> Open Source </a> by Laura Tasker
+                    </footer>
+                </div>
         </div>
-    </div>
  );
     } else {
     const apiKey = "294c897fc47f4b73d1c81e6766aacc85";
