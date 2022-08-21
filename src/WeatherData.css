@@ -1,8 +1,9 @@
-.WeatherData h3 {
+.WeatherData h1 {
     color:#24527a;
     margin: 15px 0 0 0;
 }
 .WeatherData li {
+    font-size: 22px;
     list-style: none;
     color: #5dacbd;
     margin: 0;
@@ -12,13 +13,16 @@
     color: #5dacbd;
     font-weight: 600px;
     font-size: 64px;
+    margin-top: 15px;
     margin-left: 15px;
     line-height: 64px;
 }
 .WeatherData canvas {
-    margin: 10px auto;
+    margin: 20px auto;
 }
-.WeatherData .unit {
+.WeatherData .units {
+    font-size: 18px;
     position: relative;
-    font-size: 16px;
+    top: -34px;
+    margin-left: 1px;
 }
