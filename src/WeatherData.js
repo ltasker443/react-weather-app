@@ -3,21 +3,21 @@ import FormatDate from "./FormatDate.js";
 
 export default function WeatherData(props) {
     return (
-        <div className="weather-data">
-            <h3>{props.city}</h3>
+        <div className="WeatherData">
+            <h3>{props.data.city}</h3>
                     <div className="row">
                             <div className="col-6 temperature">
                                 <ul>
-                                    <li><FormatDate date={props.date} /> </li>
-                                    <li className="text-capitalize">{props.description}</li>
-                                    <li className="temperature">{Math.round(props.temperature)}ºF</li>
+                                    <li><FormatDate date={props.data.date} /> </li>
+                                    <li className="text-capitalize">{props.data.description}</li>
+                                    <li className="temperature">{Math.round(props.data.temperature)}ºF</li>
                                 </ul>
                             </div>
                         <div className="col-6">
                             <ul>
-                                <li className="humidity">Humidity: {props.humidity}%</li>
-                                <li className="wind">Wind: {Math.round(props.wind)}mph</li>
-                                <li className="current-feel">Feels Like: {Math.round(props.feel)}ºF</li>
+                                <li className="humidity">Humidity: {props.data.humidity}%</li>
+                                <li className="wind">Wind: {Math.round(props.data.wind)}mph</li>
+                                <li className="current-feel">Feels Like: {Math.round(props.data.feel)}ºF</li>
                             </ul>
                         </div>
                      </div>
