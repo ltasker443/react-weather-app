@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormatDate from "./FormatDate.js";
 import "./Weather.css";
 
 export default function Weather() {
@@ -15,6 +16,7 @@ export default function Weather() {
             humidity: response.data.main.humidity,
             description: response.data.weather[0].description,
             feel: response.data.main.feels_like,
+            date: new Date(response.data.dt * 1000),
         })
     }
     if (weather.ready) {
@@ -36,6 +38,7 @@ export default function Weather() {
                         <div className="row">
                             <div className="col-6 temperature">
                                 <ul>
+                                    <li><FormatDate date={weather.date} /> </li>
                                     <li className="text-capitalize">{weather.description}</li>
                                     <li className="temperature">{Math.round(weather.temperature)}ºF</li>
                                 </ul>
