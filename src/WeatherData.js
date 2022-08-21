@@ -12,13 +12,10 @@ export default function WeatherData(props) {
                 <li><FormatDate date={props.data.date} /> </li>
                 <li className="text-capitalize">{props.data.description}</li>
             </ul>
-    
-                    <div className="row">
-                            <div className="col-6">
+                    <div className="row mt-3">
+                            <div className="col-6 d-flex">
                                 <div><WeatherIcon code={props.data.icon} size={52} /></div>
-                                <ul>
-                                    <li className="temperature">{Math.round(props.data.temperature)}ºF</li>
-                                </ul>
+                                <div className="temperature">{Math.round(props.data.temperature)}ºF</div>
                             </div>
                         <div className="col-6">
                             <ul>
