@@ -20,6 +20,11 @@
 .Weather .btn {
     background: #fff;
 }
+.Weather .btn:hover {
+    background:#5dacbd;
+    color:#e0ebeb;
+    border: 2px solid #fff
+}
 
 .Weather ul {
     margin: 0;

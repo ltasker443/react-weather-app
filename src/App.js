@@ -9,7 +9,7 @@ export default function App() {
         <Weather defaultCity="Las Vegas"/>
 
         <footer className="github-link">
-             <a href="https://github.com/ltasker443/react-weather-app" rel="noreferrer" target="_blank"> Open Source </a> by Laura Tasker
+             <a href="https://github.com/ltasker443/react-weather-app" rel="noreferrer" target="_blank"> Open Source </a> by Laura Tasker & hosted on <a href="https://symphonious-sable-c29c5d.netlify.app/" rel="noreferrer" target="_blank">Netlify</a>
         </footer>
       </div>
     </div>
