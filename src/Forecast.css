@@ -1,0 +1,13 @@
+.Forecast {
+    text-align: center;
+    color: #24527a;
+    font-size: 18px;
+}
+
+.Forecast .Forecast-day {
+    font-size: 22px;
+}
+.Forecast .Forecast-min {
+    opacity: .7;
+    margin-left: 5px;
+}
