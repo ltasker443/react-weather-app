@@ -10,9 +10,9 @@ export default function Weather(props) {
     const [city, setCity] = useState(props.defaultCity);
     
     function handleResponse(response) {
-        console.log(response.data)
         setWeatherData({
             ready: true,
+            coords: response.data.coord,
             temperature: response.data.main.temp,
             wind: response.data.wind.speed,
             city: response.data.name,
@@ -58,7 +58,7 @@ export default function Weather(props) {
                             <button className="btn" type="submit">Search</button>
                         </form>
                         <WeatherData data={weatherData} />
-                        <Forecast />
+                        <Forecast coordinates={weatherData.coords} />
                     </div>
                 </div>
         </div>
