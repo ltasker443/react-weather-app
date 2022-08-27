@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon.js"
+import WeatherIcon from "./WeatherIcon.js";
 
 export default function ForecastDay(props) {
     function maxTemperature() {
@@ -15,10 +15,11 @@ export default function ForecastDay(props) {
         let day = date.getDay();
 
         let days = [
-            "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
-        ]
+            "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+        ];
         return days[day];
     }
+
     return  (
         <div>
             <div className="Forecast-day">{day()}</div> 
@@ -28,5 +29,5 @@ export default function ForecastDay(props) {
                         <span className="Forecast-min"> {minTemperature()} </span>
                     </div>
             </div>
-    )
+    );
     }
