@@ -4,5 +4,6 @@
     text-align: center;
 }
 .App .container {
-    opacity: .9;
+    opacity: .8;
+    margin-top: 100px;
 }
