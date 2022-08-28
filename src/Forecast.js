@@ -16,12 +16,19 @@ export default function Forecast(props) {
         return (
            <div className="Forecast">
             <div className="row">
-                <div className="col-2">
-                    <ForecastDay data={forecastData[0]}/>
-                </div>
+                {forecastData.map(function (dailyForecast, index) {
+                    if (index >0 && index < 7) {
+                        return (
+                            <div className="col-2" key={index}>
+                                <ForecastDay data={dailyForecast} />
+                            </div> 
+                        );
+                    }
+                    return null;
+                })}
             </div>
         </div> 
-        ) 
+        ); 
         } else {
             const apiKey = "294c897fc47f4b73d1c81e6766aacc85";
             let latitude=props.coordinates.lat;
