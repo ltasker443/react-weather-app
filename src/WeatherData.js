@@ -23,7 +23,7 @@ export default function WeatherData(props) {
                             </div>
                         <div className="col-6">
                             <ul>
-                                <li><span>Day: {Math.round(props.data.max)}ºF</span> <span>Night: {Math.round(props.data.min)}ºF</span></li>
+                                <li><span>Hi: {Math.round(props.data.max)}ºF {" "} </span><span className="lo-temp">Lo: {Math.round(props.data.min)}ºF</span></li>
                                 <li className="humidity">Humidity: {props.data.humidity}%</li>
                                 <li className="wind">Wind: {Math.round(props.data.wind)}mph</li>
                                 <li className="current-feel">Feels Like: {Math.round(props.data.feel)}ºF</li>
