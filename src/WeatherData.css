@@ -1,16 +1,16 @@
 .WeatherData h1 {
-    color:#24527a;
+    color:#455d7a;
     margin: 15px 0 0 0;
 }
 .WeatherData li {
-    font-size: 22px;
+    font-size: 20px;
     list-style: none;
-    color: #5dacbd;
+    color: #233142;
     margin: 0;
     padding: 0;
 }
 .WeatherData .temperature {
-    color: #5dacbd;
+    color: #233142;
     font-weight: 600px;
     font-size: 64px;
     margin-top: 20px;

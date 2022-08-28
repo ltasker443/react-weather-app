@@ -3,25 +3,26 @@
 }
 
 .Weather .card{
-    background-color: #e0ebeb;
+    background-color: #e3e3e3;
     padding: 5px;
     margin: 5px auto;
     max-width: 700px;
-    border: 2px solid #a7bcb9;
+    border: 2px solid #f95959;
     border-radius: 10px;
 }
 
 .Weather .form-control, .btn {
-    border: 2px solid #a7bcb9;
+    border: 2px solid #f95959;
     margin-top: 0;
     padding: 10px;
-    color: #a7bcb9;
+    color: #233142;
 }
 .Weather .btn {
     background: #fff;
 }
 .Weather .btn:hover {
-    background:#5dacbd;
+    background:#233142;
+    opacity: .9;
     color:#e0ebeb;
     border: 2px solid #fff
 }

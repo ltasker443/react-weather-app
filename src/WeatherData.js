@@ -15,7 +15,7 @@ export default function WeatherData(props) {
             </ul>
                     <div className="row mt-3">
                             <div className="col-6 d-flex">
-                                <div className="float-left"><WeatherIcon code={props.data.icon} size={56} color="#24527a" /></div>
+                                <div className="float-left"><WeatherIcon code={props.data.icon} size={56} color="#455d7a" /></div>
                                 <div className="foat-left">
                                     <WeatherTemp fahrenheit={props.data.temperature} />
                                 </div>
@@ -23,7 +23,7 @@ export default function WeatherData(props) {
                             </div>
                         <div className="col-6">
                             <ul>
-                                <li><span>Hi: {Math.round(props.data.max)}ºF {" "} </span><span className="lo-temp">Lo: {Math.round(props.data.min)}ºF</span></li>
+                                <li><span>Hi: {Math.round(props.data.max)}º {" "} </span><span className="lo-temp">Lo: {Math.round(props.data.min)}º</span></li>
                                 <li className="humidity">Humidity: {props.data.humidity}%</li>
                                 <li className="wind">Wind: {Math.round(props.data.wind)}mph</li>
                                 <li className="current-feel">Feels Like: {Math.round(props.data.feel)}ºF</li>
